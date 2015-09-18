@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:exmaple="http://schemas.android.com/apk/res/com.example.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TitleStyle"
+        android:text="设置中心" />
+    <!-- 自动更新 -->
+
+    <com.example.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        exmaple:desc_off="自动更新已关闭"
+        exmaple:desc_on="自动更新已打开"
+        exmaple:mytitle="自动更新设置" />
+    <!-- 黑名单 -->
+
+    <com.example.mobilesafe.view.SettingItemView
+        android:id="@+id/sv_blacknumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        exmaple:desc_off="黑名单拦截已经关闭"
+        exmaple:desc_on="黑名单拦截已经打开"
+        exmaple:mytitle="黑名单设置" />
+
+    <!-- 看门狗 -->
+
+    <com.example.mobilesafe.view.SettingItemView
+        android:id="@+id/sv_watch_dog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        exmaple:desc_off="看门狗更新已经关闭"
+        exmaple:desc_on="看门狗已经打开"
+        exmaple:mytitle="看门狗设置" />
+
+    <com.example.mobilesafe.view.SettingItemView
+        android:id="@+id/siv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        exmaple:desc_off="归属地显示已经关闭"
+        exmaple:desc_on="归属地显示已经打开"
+        exmaple:mytitle="电话归属地显示设置" />
+
+    <com.example.mobilesafe.view.SettingClickView
+        android:id="@+id/scv_address_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.example.mobilesafe.view.SettingClickView
+        android:id="@+id/scv_address_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
